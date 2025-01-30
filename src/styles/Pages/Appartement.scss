@@ -1,0 +1,9 @@
+.appartment-page {
+    min-height: 45vh;
+}
+
+@media (max-width: 510px) {
+    .appartment-page {
+        height: 100%;
+    }
+}
