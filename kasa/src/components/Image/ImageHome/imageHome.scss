@@ -1,0 +1,97 @@
+@use "../../../styles/settings.scss" as *;
+
+.divImageHome {
+    width: $widthDesktopPrimary;
+    height: 223px;
+    background: url('@/images/banniere.png');
+    @include verticalCenter;
+    margin: 2% auto;
+    position: relative;
+    border-radius: 25px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    
+
+    .imageBrightness {
+
+        background: #000000;
+        mix-blend-mode: darken;
+        opacity: 0.3;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        border-radius: 25px;
+        
+
+    }
+
+    .titre {
+        
+        font-size: 48px;
+        font-family: 'Calibri';
+        font-style: normal;
+        font-weight: 500;
+        color: white;
+        z-index: 2;
+
+        br {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: $widthTablette) {
+    .divImageHome {
+        width: 75%;
+    }
+  }
+
+  @media (max-width: 1040px) {
+    .divImageHome {
+        width: 70%;
+        .titre {
+            font-size: 32px ;
+        }
+    }
+  }
+
+  @media (max-width: 946px) {
+    .divImageHome {
+        width: 670px;
+        
+    }
+
+   
+  }
+
+  @media (max-width: 700px) {
+    .divImageHome {
+        width: 500px;
+        height: 180px;
+        
+    }
+
+   
+  }
+
+  @media (max-width: 510px) {
+    .divImageHome {
+        width: 335px;
+        height: 111px;
+        .titre {
+            width: 90%;
+            font-size: 24px ;
+            br {
+                display: initial;
+            }
+        }
+    }
+
+   
+  }
+
+  

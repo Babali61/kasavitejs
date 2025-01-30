@@ -1,0 +1,23 @@
+@use "../../../styles/settings.scss" as *;
+
+.ContainerTitleTag {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    margin: auto;
+    flex-direction: column;
+}
+
+@media (max-width: $widthTablette) {
+    .ContainerTitleTag {
+        width: 100%
+    }
+}
+
+@media (max-width: 1040px) {
+
+    .ContainerTitleTag {
+        width: 100%;
+    }
+
+}

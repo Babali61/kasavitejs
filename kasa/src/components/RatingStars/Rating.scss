@@ -1,0 +1,37 @@
+@use "../../styles/settings.scss" as *;
+
+.star-rating {
+    display: flex;
+    margin-top: 4.7%;
+}
+
+.stars {
+    width: 25px;
+    height: 25px;
+}
+
+
+@media (max-width: 946px) {
+    .stars {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .star-rating {
+        margin: auto 0;
+    }
+    .stars {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (max-width: 510px) {
+    .stars {
+        width: 15px;
+        height: 15px;
+    }
+}

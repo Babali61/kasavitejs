@@ -1,0 +1,52 @@
+@use "../../styles/settings.scss" as *;
+
+.divParentFooter {
+
+    width: 100%;
+
+    background: black;
+
+    .divLogoFooter {
+        @include flexJustifyCenter;
+        padding-top: 2%;
+
+
+    }
+
+    .divTextFooter {
+        @include flexJustifyCenter;
+        padding: 1%;
+
+        .textFooter {
+            color: #FFFFFF;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+        }
+    }
+
+}
+
+
+@media (max-width: 510px) {
+    .divParentFooter {
+        width: 100%;
+    height: 159px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+       
+
+        
+        .divTextFooter {
+            
+            .textFooter {
+               
+                font-size: 12px;
+            }
+        }
+    }
+
+
+}

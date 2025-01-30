@@ -1,0 +1,60 @@
+@use "../../../styles/settings.scss" as *;
+
+.divImage {
+    width: $widthDesktopPrimary;
+    height: 223px;
+    background: url('@/images/montagne.png');
+    @include verticalCenter;
+    margin: 2% auto;
+    position: relative;
+    border-radius: 25px;
+    background-size: cover;
+    background-position-y: 50%;
+
+    .imageBrightness {
+
+        background: #000000;
+        mix-blend-mode: darken;
+        opacity: 0.3;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        border-radius: 25px;
+
+    }
+
+}
+
+@media (max-width: $widthTablette) {
+    .divImage {
+        width: 75%;
+    }
+  }
+
+  @media (max-width: 1040px) {
+    .divImage {
+        width: 70%;
+    }
+  }
+
+  @media (max-width: 946px) {
+    .divImage {
+        width: 670px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .divImage {
+        width: 460px;
+    }
+  }
+
+  @media (max-width: 510px) {
+    .divImage {
+        width: 335px;
+        height: 223px;
+    }
+  }

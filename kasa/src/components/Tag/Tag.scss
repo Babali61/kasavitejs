@@ -1,0 +1,39 @@
+@use "../../styles/settings.scss" as *;
+
+.divParentTag {
+    @include flexAlignCenter;
+    margin-top: 2%;
+
+    .tagEnfant {
+        background: $colorPrimary;
+        border-radius: 10px;
+        margin-right: 2%;
+        width: 125px;
+        height: 25px;
+        @include verticalCenter
+    }
+
+    .titrelocation {
+        color: #FFFFFF;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        font-family: 'Calibri';
+    }
+}
+
+@media (max-width: 510px) {
+    .divParentTag {
+
+        .tagEnfant{
+            width: 90px;
+            height: 18px;
+        }
+        .titrelocation{
+            font-size: 10px;
+        }
+    }
+}

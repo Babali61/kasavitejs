@@ -1,0 +1,59 @@
+$colorPrimary: #FF6060;
+$colorText: #000000;
+$color2: #F7F7F7;
+$widthDesktopPrimary : 1240px;
+$widthDesktopContainer1 : 1023px;
+$widthDesktopContainer2 : 582px;
+$widthTablette : 1260px;
+$titlePrimary : 36px ;
+$titleSecondary : 18px;
+$textAbout : 24px ;
+
+@mixin verticalCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexAlignCenter {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexJustifyCenter {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+html, body {
+	height: 100%;
+	margin: 0; padding: 0;
+}
+
+body {
+  background: #FFFFFF;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Montserrat',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+	width: 100%;
+  
+}
+
+h1,h2,h3,p{
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+

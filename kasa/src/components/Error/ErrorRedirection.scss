@@ -1,0 +1,61 @@
+@use "../../styles/settings.scss" as *;
+
+.linkHome {
+    width: 100%;
+    text-align: center;
+    margin:  15vh auto;
+        h3 {
+            font-family: 'Calibri';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+           
+            color: $colorText;
+            text-decoration: underline $colorText;
+        }
+}
+
+@media (max-width: $widthTablette) {
+    .linkHome {
+        width: 75%
+    }
+}
+
+
+
+@media (max-width: 1040px) {
+
+    .linkHome {
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 946px) {
+    .linkHome {
+        width: 670px;
+    }
+
+   
+}
+
+@media (max-width: 700px) {
+    .linkHome {
+        width: 460px;
+ 
+    }
+
+    
+}
+
+@media (max-width: 510px) {
+    .linkHome {
+        width: 335px;
+        margin:auto;
+        h3 {
+            padding-top: 30%;
+        }
+    }
+
+    
+}

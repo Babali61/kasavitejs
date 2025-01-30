@@ -1,0 +1,39 @@
+@use "../../styles/settings.scss" as *;
+
+.parentTitreImageAuteur {
+    @include verticalCenter;
+    margin-top: 2%;
+
+    .titleAuteur {
+        font-family: 'Calibri';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: $colorPrimary;
+        text-align: right;
+        
+    }
+
+    .imageAuteur {
+        width: 64px;
+        height: 64px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 510px) {
+    .parentTitreImageAuteur {
+    
+        .titleAuteur{
+            font-size: 12px;
+        }
+
+        .imageAuteur{
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+}

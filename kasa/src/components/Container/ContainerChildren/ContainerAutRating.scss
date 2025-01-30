@@ -1,0 +1,31 @@
+@use "../../../styles/settings.scss" as *;
+
+.ContainerAuthRating {
+    display: flex;
+    align-items: flex-end;
+    width: 300px;
+    margin-top: 1%;
+    flex-direction: column;
+}
+
+@media (max-width: 1040px) {
+
+    .ContainerAuthRating {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 946px) {
+
+    .ContainerAuthRating {
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+}

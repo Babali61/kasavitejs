@@ -1,0 +1,48 @@
+@use "../../styles/settings.scss" as *;
+
+.Container {
+    display: flex;
+    justify-content: space-between;
+    width: 1240px;
+    margin: auto;
+}
+@media (max-width: $widthTablette) {
+    .Container {
+        width: 75%
+    }
+}
+
+@media (max-width: 1040px) {
+
+    .Container {
+        width: 70%;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 946px) {
+  
+
+        .Container {
+            
+            width: 670px;
+            flex-direction: column;
+        }
+    
+}
+
+@media (max-width: 700px) {
+ 
+
+        .Container {
+            width: 460px;
+        }
+    
+}
+
+@media (max-width: 510px) {
+    .Container {
+        width: 335px;
+    }
+}

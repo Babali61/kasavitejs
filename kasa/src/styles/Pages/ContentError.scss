@@ -1,0 +1,15 @@
+.contentError {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 78vh;
+}
+
+@media (max-width: 510px) {
+    .contentError {
+        height: 100%;
+    }
+
+    
+}

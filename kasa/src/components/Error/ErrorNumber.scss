@@ -1,0 +1,75 @@
+@use "../../styles/settings.scss" as *;
+
+.divErrorNumber {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+
+    .errorNumber {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 288px;
+        line-height: 142.6%;
+        color: $colorPrimary;
+        margin: 0;
+    }
+
+    h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 142.6%;
+        color: $colorPrimary;
+    }
+}
+
+@media (max-width: $widthTablette) {
+    .divErrorNumber {
+        width: 75%
+    }
+  
+}
+
+
+
+@media (max-width: 1040px) {
+
+    .divErrorNumber {
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 946px) {
+    .divErrorNumber {
+        width: 670px;
+    }
+
+   
+}
+
+@media (max-width: 700px) {
+    .divErrorNumber {
+        width: 460px;
+    }
+
+    
+}
+
+@media (max-width: 510px) {
+    .divErrorNumber {
+        width: 335px;
+
+        .errorNumber {
+            font-size: 96px;
+           
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+    }
+
+    
+}

@@ -1,0 +1,113 @@
+
+@use "../../styles/settings.scss" as *;
+
+.divparent {
+    @include flexAlignCenter;
+    margin: auto;
+    flex-wrap: wrap;
+    
+   
+    padding-bottom: 3%;
+    background-color: #E5E5E5;
+    width: 1240px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    justify-content: space-evenly;
+
+    .list {
+        display: flex;
+        padding-top: 3%;
+        position: relative;
+    }
+
+}
+
+
+.divEnfant {
+    .img {
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .titrelocation {
+        width: 320px;
+        position: absolute;
+        z-index: 0;
+        margin-top: -19%;
+        margin-left: 15px;
+        font-size: 2vh;
+        font-family: 'Calibri';
+
+        text-overflow: clip;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 142.6%;
+        /* or 26px */
+
+
+
+        color: #FFFFFF;
+
+
+    }
+}
+
+@media (max-width: $widthTablette) {
+    .divparent {
+        width: 75%;
+    }
+  }
+
+  @media (max-width: 1040px) {
+    .divparent {
+        width: 70%;
+    }
+    .divEnfant {
+        .img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+  }
+  @media (max-width: 946px) {
+    .divparent {
+        width: 670px;
+    }
+    .divEnfant {
+        .img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+  }
+
+  @media (max-width: 700px) {
+    .divparent {
+        width: 420px;
+    }
+    .divEnfant {
+        .img {
+            width: 330px;
+            height: 330px;
+        }
+    }
+  }
+
+  @media (max-width: 510px) {
+    .divparent {
+        width: 335px;
+       
+        background-color: transparent;
+    }
+
+    .divEnfant {
+        .img {
+            width: 335px;
+            height: 255px;
+        }
+    }
+  }

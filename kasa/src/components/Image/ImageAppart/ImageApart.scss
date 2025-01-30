@@ -1,0 +1,128 @@
+@use "../../../styles/settings.scss" as *;
+
+.divImageApartment {
+    @include verticalCenter;
+    width: $widthDesktopPrimary;
+    margin: 0 auto;
+    position: relative;
+
+    .imageApartment {
+        width: 1240px;
+        height: 415px;
+        border-radius: 25px;
+        object-fit: cover;
+        margin-top: 3%;
+    }
+
+    .fas.fa-chevron-left,
+    .fas.fa-chevron-right {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 90px;
+        color: #FFFFFF;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .fas.fa-chevron-left {
+        left: 10px;
+    }
+
+    .fas.fa-chevron-right {
+        right: 10px;
+    }
+
+    .imageIndex {
+        position: absolute;
+        bottom: 0;
+        transform: translateY(-35px);
+        font-size: 22px;
+        color: white;
+    }
+}
+
+@media (max-width: $widthTablette) {
+    .divImageApartment {
+        width: 75%
+    }
+}
+
+
+
+@media (max-width: 1040px) {
+
+    .divImageApartment {
+        width: 70%;
+    }
+
+
+
+}
+
+@media (max-width: 946px) {
+    .divImageApartment {
+        
+        width: 670px;
+
+        .fas.fa-chevron-left,
+    .fas.fa-chevron-right {
+
+        font-size: 50px;
+
+    }
+    }
+    
+
+}
+
+@media (max-width: 700px) {
+    .divImageApartment {
+        width: 460px;
+
+        .imageIndex {
+            font-size: 19px;
+        }
+        .imageApartment {
+            width: 460px;
+            height: 255px;
+        }
+
+        .fas.fa-chevron-left,
+        .fas.fa-chevron-right {
+
+            font-size: 40px;
+
+        }
+    }
+
+  
+
+
+}
+
+@media (max-width: 510px) {
+    .divImageApartment {
+        width: 335px;
+        
+
+        .imageApartment {
+            width: 335px;
+            height: 255px;
+        }
+
+        .fas.fa-chevron-left,
+        .fas.fa-chevron-right {
+
+            font-size: 30px;
+
+        }
+
+        .imageIndex {
+            display: none;
+        }
+    }
+
+
+
+}

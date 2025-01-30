@@ -1,0 +1,131 @@
+@use "../../styles/settings.scss" as *;
+
+.lmj-banner {
+    display: flex;
+    margin: auto;
+    width: $widthDesktopPrimary;
+    height: 68px;
+    padding-top: 40px;
+
+}
+
+.divLogo {
+    .svgBanner {
+        width: 211px;
+        height: 68px;
+    }
+}
+
+.divLink {
+    width: 100%;
+
+    ul {
+        display: flex;
+        width: auto;
+        justify-content: flex-end;
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+            padding: 20px;
+            color: $colorPrimary;
+            font-family: 'Calibri';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 142.6%;
+
+            li {
+                transition: 0.2s;
+
+                &:hover {
+                    text-decoration: underline $colorPrimary;
+                }
+
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: $widthTablette) {
+    .lmj-banner {
+        width: 75%
+    }
+}
+
+
+
+@media (max-width: 1040px) {
+
+    .lmj-banner {
+        width: 70%;
+    }
+
+    .divLogo {
+        .svgBanner {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .divLink {
+        width: 90%;
+
+        ul {
+            a {
+                padding: 3%;
+            }
+        }
+    }
+}
+
+@media (max-width: 946px) {
+    .lmj-banner {
+        width: 670px;
+        
+    }
+
+    .divLink {
+
+        ul {
+            a {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .lmj-banner {
+        width: 460px;
+        
+    }
+
+    .divLink {
+
+        ul {
+            a {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 510px) {
+    .lmj-banner {
+        width: 335px;
+        padding-top: 2%;
+
+    }
+
+    .divLink {
+        
+        ul {
+            a {
+                font-size: 12px;
+                line-height: 27px;
+            }
+        }
+    }
+}
