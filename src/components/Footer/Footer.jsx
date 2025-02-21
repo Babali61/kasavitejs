@@ -3,7 +3,6 @@
 const Footer = () => {
     return (
 
-        <div className='divPosition'>
             <div className='divParentFooter'>
                 <div className='divLogoFooter'>
                     <svg width="122" height="40" viewBox="0 0 122 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,7 +17,6 @@ const Footer = () => {
                     <p className='textFooter'>© 2020 Kasa. All rights reserved</p>
                 </div>
             </div>
-        </div>
     );
 };
 

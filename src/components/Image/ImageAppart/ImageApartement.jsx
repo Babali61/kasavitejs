@@ -25,10 +25,14 @@ function ImageSlider() {
     return (
         <div>
             <div className='divImageApartment'>
-                {images.length > 1 && <i onClick={previousImage} className='fas fa-chevron-left'><FontAwesomeIcon icon={faChevronLeft} /></i>}
+                {images.length > 1 && <i onClick={previousImage} className='fas fa-chevron-left'>
+                    <FontAwesomeIcon icon={faChevronLeft} />
+                </i>}
                 <img className='imageApartment' src={images[currentIndex]} alt={apartment.title} />
-                {images.length > 1 && <i onClick={nextImage} className='fas fa-chevron-right'><FontAwesomeIcon icon={faChevronRight} /></i>}
-                <div className='imageIndex'>{currentIndex + 1}/{images.length}</div>
+                {images.length > 1 && <i onClick={nextImage} className='fas fa-chevron-right'>
+                    <FontAwesomeIcon icon={faChevronRight} />
+                </i>}
+                {images.length > 1 && <div className='imageIndex'>{currentIndex + 1}/{images.length}</div>}
             </div>
         </div>
     );

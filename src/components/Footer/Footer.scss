@@ -2,9 +2,11 @@
 
 .divParentFooter {
 
+    background-color: black;
+    margin-top: auto; 
     width: 100%;
-
-    background: black;
+    padding: 20px 0;
+    z-index: 100; 
 
     .divLogoFooter {
         @include flexJustifyCenter;
